@@ -23,6 +23,9 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+FreeRTOS/Source \
+FreeRTOS/Source/portable/GCC/ARM_CM3 \
+FreeRTOS/Source/portable/MemMang \
 HAL/LCD \
 HAL/LDR \
 HAL/LM35 \

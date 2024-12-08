@@ -17,6 +17,7 @@
  ******************************************************************************
  */
 #include "main.h"
+#include "FreeRTOS.h"
 
 int main(void) {
 	RCC_init(RCC_HSE, HSE_CRYSTAL, 0, 0);
@@ -38,38 +39,28 @@ int main(void) {
 
 	node_t node = { .status = 0 };
 	uint8 received_json[50];
-	lcd_init();
-	LM35_init(ADC1);
-	STK_init();
 
-	LDR_init(ADC1);
 	uint16 val;
 	while (1) {
 
-//		val = LM35_Read(ADC1, ADC_CH1);
-////		val = LDR_Read(ADC1, ADC_CH3);
-//		lcd_display_number(val);
-//		lcd_send_String("  ");
-//		STK_delayMs(5000);
+		USART_ReceiveString(USART1, (uint8 *)received_json);
+		Parsed_JSON_t parsedMessage = JSON_parseString((uint8 *)received_json);
+		node.nodeID = parsedMessage.nodeID;
 
-//		USART_ReceiveString(USART1, (uint8 *)received_json);
-//		Parsed_JSON_t parsedMessage = JSON_parseString((uint8 *)received_json);
-//		node.nodeID = parsedMessage.nodeID;
-//
-//		if (!strcmp((char*) parsedMessage.command, "ENA")) {
-//			enableNode(&node);
-//		} else if (!strcmp((char*) parsedMessage.command, "ACT")) {
-//			actOnNode(&node, (uint8)(parsedMessage.data[0]- '0'));
-//		} else if (!strcmp((char*) parsedMessage.command, "STA")) {
-//			getNodeStatus(&node);
-//		}else if (!strcmp((char*) parsedMessage.command, "DUR")) {
-//			uint32 data;
-//			sprintf(parsedMessage.data, "%d", data);
-//			setNodeDuration(&node, data);
-//			getNodeReading(&node); //???
-//		}else if (!strcmp((char*) parsedMessage.command, "DIS")) {
-//			disableNode(&node);
-//		}
+		if (!strcmp((char*) parsedMessage.command, "ENA")) {
+			enableNode(&node);
+		} else if (!strcmp((char*) parsedMessage.command, "ACT")) {
+			actOnNode(&node, (uint8)(parsedMessage.data[0]- '0'));
+		} else if (!strcmp((char*) parsedMessage.command, "STA")) {
+			getNodeStatus(&node);
+		}else if (!strcmp((char*) parsedMessage.command, "DUR")) {
+			uint32 data;
+			sprintf(parsedMessage.data, "%d", data);
+			setNodeDuration(&node, data);
+			getNodeReading(&node); //???
+		}else if (!strcmp((char*) parsedMessage.command, "DIS")) {
+			disableNode(&node);
+		}
 
 	}
 

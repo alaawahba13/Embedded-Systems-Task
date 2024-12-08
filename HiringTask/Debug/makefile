@@ -24,6 +24,9 @@ RM := rm -rf
 -include HAL/LM35/subdir.mk
 -include HAL/LDR/subdir.mk
 -include HAL/LCD/subdir.mk
+-include FreeRTOS/Source/portable/MemMang/subdir.mk
+-include FreeRTOS/Source/portable/GCC/ARM_CM3/subdir.mk
+-include FreeRTOS/Source/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -75,8 +78,8 @@ all: main-build
 main-build: HiringTask.elf secondary-outputs
 
 # Tool invocations
-HiringTask.elf HiringTask.map: $(OBJS) $(USER_OBJS) C:\Users\Qebaa\Documents\STM32CubeIDE\HiringTask\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "HiringTask.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Qebaa\Documents\STM32CubeIDE\HiringTask\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HiringTask.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+HiringTask.elf HiringTask.map: $(OBJS) $(USER_OBJS) C:\Users\Qebaa\Documents\STM32CubeIDE\Embedded-Systems-Task\HiringTask\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "HiringTask.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Qebaa\Documents\STM32CubeIDE\Embedded-Systems-Task\HiringTask\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HiringTask.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

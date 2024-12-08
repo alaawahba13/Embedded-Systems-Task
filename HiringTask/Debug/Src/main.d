@@ -23,7 +23,14 @@ Src/main.o: ../Src/main.c ../Src/main.h ../Src/../MCAL/GPIO/GPIO.h \
  ../Inc/../MCAL/SYSTICK/../Lib/STM32_F103x6.h \
  ../Inc/../MCAL/SYSTICK/../RCC/RCC.h ../Src/../HAL/LCD/LCD.h \
  ../Src/../HAL/LCD/../../MCAL/GPIO/GPIO.h \
- ../Src/../HAL/LCD/../../MCAL/SYSTICK/SYSTICK.h
+ ../Src/../HAL/LCD/../../MCAL/SYSTICK/SYSTICK.h \
+ C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/include/FreeRTOS.h \
+ ../Inc/FreeRTOSConfig.h \
+ C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/include/projdefs.h \
+ C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/include/portable.h \
+ C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/include/deprecated_definitions.h \
+ C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+ C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/include/mpu_wrappers.h
 ../Src/main.h:
 ../Src/../MCAL/GPIO/GPIO.h:
 ../Src/../MCAL/GPIO/../lib/STM32_F103x6.h:
@@ -56,3 +63,10 @@ Src/main.o: ../Src/main.c ../Src/main.h ../Src/../MCAL/GPIO/GPIO.h \
 ../Src/../HAL/LCD/LCD.h:
 ../Src/../HAL/LCD/../../MCAL/GPIO/GPIO.h:
 ../Src/../HAL/LCD/../../MCAL/SYSTICK/SYSTICK.h:
+C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/include/FreeRTOS.h:
+../Inc/FreeRTOSConfig.h:
+C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/include/projdefs.h:
+C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/include/portable.h:
+C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/include/deprecated_definitions.h:
+C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h:
+C:/Users/Qebaa/Documents/STM32CubeIDE/Embedded-Systems-Task/HiringTask/FreeRTOS/Source/include/mpu_wrappers.h:
