@@ -1,0 +1,2 @@
+../Lib/JSON/JSON_Parser.c:9:15:JSON_parseString	80	static
+../Lib/JSON/JSON_Parser.c:38:8:JSON_createString	32	static

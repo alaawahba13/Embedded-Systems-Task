@@ -1,0 +1,6 @@
+../HAL/Node/Node.c:12:6:enableNode	4
+../HAL/Node/Node.c:33:6:disableNode	2
+../HAL/Node/Node.c:42:6:actOnNode	2
+../HAL/Node/Node.c:48:6:getNodeStatus	2
+../HAL/Node/Node.c:57:6:setNodeDuration	1
+../HAL/Node/Node.c:60:6:getNodeReading	3

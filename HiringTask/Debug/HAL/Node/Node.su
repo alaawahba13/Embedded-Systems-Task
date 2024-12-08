@@ -1,0 +1,6 @@
+../HAL/Node/Node.c:12:6:enableNode	32	static
+../HAL/Node/Node.c:33:6:disableNode	16	static
+../HAL/Node/Node.c:42:6:actOnNode	16	static
+../HAL/Node/Node.c:48:6:getNodeStatus	24	static
+../HAL/Node/Node.c:57:6:setNodeDuration	16	static
+../HAL/Node/Node.c:60:6:getNodeReading	24	static

@@ -1,0 +1,2 @@
+../HAL/LDR/LDR.c:11:6:LDR_init	16	static
+../HAL/LDR/LDR.c:15:8:LDR_Read	16	static

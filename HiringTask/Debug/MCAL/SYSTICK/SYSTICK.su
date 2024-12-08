@@ -1,0 +1,9 @@
+../MCAL/SYSTICK/SYSTICK.c:26:6:STK_init	8	static
+../MCAL/SYSTICK/SYSTICK.c:40:6:STK_BusyWait	16	static
+../MCAL/SYSTICK/SYSTICK.c:57:6:STK_stopInterval	4	static
+../MCAL/SYSTICK/SYSTICK.c:68:6:STK_delayMs	24	static
+../MCAL/SYSTICK/SYSTICK.c:85:6:STK_delayUs	16	static
+../MCAL/SYSTICK/SYSTICK.c:100:6:STK_SetInterval	16	static
+../MCAL/SYSTICK/SYSTICK.c:112:8:STK_getElapsedTime	24	static
+../MCAL/SYSTICK/SYSTICK.c:118:8:STK_getRemainingTime	4	static
+../MCAL/SYSTICK/SYSTICK.c:123:6:SysTick_Handler	16	static

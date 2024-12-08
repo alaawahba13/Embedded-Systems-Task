@@ -1,0 +1,2 @@
+../HAL/RelayModule/Relay.c:12:6:Relay_init	16	static
+../HAL/RelayModule/Relay.c:18:6:Relay_setPin	16	static
