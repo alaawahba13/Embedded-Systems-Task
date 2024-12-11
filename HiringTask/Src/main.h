@@ -11,6 +11,7 @@
 #include "../MCAL/GPIO/GPIO.h"
 #include "../MCAL/RCC/RCC.h"
 #include "../HAL/Node/Node.h"
-#include "../HAL/LCD/LCD.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 #endif /* INC_MAIN_H_ */

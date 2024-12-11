@@ -12,21 +12,19 @@ RM := rm -rf
 -include Startup/subdir.mk
 -include Src/subdir.mk
 -include MCAL/USART/subdir.mk
--include MCAL/SYSTICK/subdir.mk
 -include MCAL/RCC/subdir.mk
 -include MCAL/NVIC/subdir.mk
 -include MCAL/GPIO/subdir.mk
 -include MCAL/EXTI/subdir.mk
 -include MCAL/ADC/subdir.mk
 -include Lib/JSON/subdir.mk
+-include Lib/FreeRTOS/Source/portable/MemMang/subdir.mk
+-include Lib/FreeRTOS/Source/portable/GCC/ARM_CM3/subdir.mk
+-include Lib/FreeRTOS/Source/subdir.mk
 -include HAL/RelayModule/subdir.mk
 -include HAL/Node/subdir.mk
 -include HAL/LM35/subdir.mk
 -include HAL/LDR/subdir.mk
--include HAL/LCD/subdir.mk
--include FreeRTOS/Source/portable/MemMang/subdir.mk
--include FreeRTOS/Source/portable/GCC/ARM_CM3/subdir.mk
--include FreeRTOS/Source/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

@@ -58,7 +58,6 @@ void setNodeDuration(node_t *node, uint32 duration) {
 	node->duration = duration;
 }
 void getNodeReading(node_t *node) {
-	STK_delayMs(node->duration);
 	uint8 value;
 	if (node->nodeID == tempID) {
 		value = LM35_Read(LM35_ADC, LM35_CHANNEL);

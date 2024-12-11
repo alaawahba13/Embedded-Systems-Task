@@ -14,7 +14,6 @@
 #include "../RelayModule/Relay.h"
 #include "../../Lib/JSON/JSON_Parser.h"
 #include "../MCAL/USART/USART.h"
-#include "../MCAL/SYSTICK/SYSTICK.h"
 
 #define tempID 		0x80
 #define ldrID		0x81

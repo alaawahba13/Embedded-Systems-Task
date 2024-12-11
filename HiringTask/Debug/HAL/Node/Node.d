@@ -15,10 +15,7 @@ HAL/Node/Node.o: ../HAL/Node/Node.c ../HAL/Node/Node.h \
  ../Inc/../MCAL/USART/../RCC/RCC.h ../Inc/../MCAL/USART/../EXTI/EXTI.h \
  ../Inc/../MCAL/USART/../EXTI/../GPIO/GPIO.h \
  ../Inc/../MCAL/USART/../EXTI/../NVIC/NVIC.h \
- ../Inc/../MCAL/USART/../EXTI/../NVIC/../lib/STM32_F103x6.h \
- ../Inc/../MCAL/SYSTICK/SYSTICK.h \
- ../Inc/../MCAL/SYSTICK/../Lib/STM32_F103x6.h \
- ../Inc/../MCAL/SYSTICK/../RCC/RCC.h
+ ../Inc/../MCAL/USART/../EXTI/../NVIC/../lib/STM32_F103x6.h
 ../HAL/Node/Node.h:
 ../HAL/Node/../LM35/LM35.h:
 ../HAL/Node/../LM35/../../MCAL/ADC/ADC.h:
@@ -42,6 +39,3 @@ HAL/Node/Node.o: ../HAL/Node/Node.c ../HAL/Node/Node.h \
 ../Inc/../MCAL/USART/../EXTI/../GPIO/GPIO.h:
 ../Inc/../MCAL/USART/../EXTI/../NVIC/NVIC.h:
 ../Inc/../MCAL/USART/../EXTI/../NVIC/../lib/STM32_F103x6.h:
-../Inc/../MCAL/SYSTICK/SYSTICK.h:
-../Inc/../MCAL/SYSTICK/../Lib/STM32_F103x6.h:
-../Inc/../MCAL/SYSTICK/../RCC/RCC.h:

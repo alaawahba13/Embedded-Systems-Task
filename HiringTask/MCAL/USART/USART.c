@@ -320,20 +320,19 @@ void USART_SendString(USART_Registers_t *USARTx, const uint8 *str) {
 	}
 }
 
-void USART_ReceiveString(USART_Registers_t *USARTx,uint8 *buffer) {
-
+void USART_ReceiveString(USART_Registers_t *USARTx, uint8 *buffer) {
 	uint8 index = 0;
 
 	// Receive the first character and store it in the array.
-	buffer[index] = USART_Recieve(USARTx, Enable);
+	buffer[index] = USART_Recieve(USART1, Enable);
 
 	// Keep receiving characters until the end of the string or '#' character is received.
-	while (buffer[index] != '\0' && buffer[index] != '#') {
+	while (buffer[index] != '\0' && buffer[index] != '\n') {
 		index++;
-		buffer[index] = USART_Recieve(USARTx, Enable);
+		buffer[index] = USART_Recieve(USART1, Enable);
 	}
 
-//	// Add the null terminator at the end of the received string.
+	// Add the null terminator at the end of the received string.
 	buffer[index] = '\0';
 }
 

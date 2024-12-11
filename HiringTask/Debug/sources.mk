@@ -23,21 +23,19 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-FreeRTOS/Source \
-FreeRTOS/Source/portable/GCC/ARM_CM3 \
-FreeRTOS/Source/portable/MemMang \
-HAL/LCD \
 HAL/LDR \
 HAL/LM35 \
 HAL/Node \
 HAL/RelayModule \
+Lib/FreeRTOS/Source \
+Lib/FreeRTOS/Source/portable/GCC/ARM_CM3 \
+Lib/FreeRTOS/Source/portable/MemMang \
 Lib/JSON \
 MCAL/ADC \
 MCAL/EXTI \
 MCAL/GPIO \
 MCAL/NVIC \
 MCAL/RCC \
-MCAL/SYSTICK \
 MCAL/USART \
 Src \
 Startup \
